@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bi'Mola Menüsü</title>
+<style>
+body { font-family: Arial,sans-serif; background:#f7f7f7; margin:0; padding:20px; color:#333; }
+header { text-align:center; margin-bottom:30px; }
+header h1 { font-size:28px; color:#b22222; text-shadow:1px 1px 2px #fff; }
+.section-title { text-align:center; margin:20px 0 10px; font-size:24px; color:#6a5acd; font-weight:bold; }
+.container { max-width:600px; margin:0 auto 40px; }
+.menu-header, .sub-header {
+  cursor:pointer; border-radius:8px; margin:5px 0; padding:12px 15px; color:#fff; font-weight:bold; transition:0.2s;
+}
+.menu-header { background:#b22222; font-size:18px; }
+.menu-header:hover { background:#ff4c4c; }
+.sub-header { font-size:16px; }
+.sub-header.red { background:#b22222; } /* Sıcak kategoriler */
+.sub-header.blue { background:#1e90ff; } /* Soğuk kategoriler */
+
+.menu-items { display:none; margin:5px 0 0 0; }
+.menu-item {
+  background:#fff; margin:5px 0; padding:12px 15px; border-radius:8px;
+  display:flex; justify-content:flex-start; align-items:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  transition:0.2s;
+}
+.menu-item:hover { background:#f0f0f0; transform:scale(1.02); }
+footer { text-align:center; margin-top:40px; font-size:13px; color:#888; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🍹 Bi'Mola</h1>
+  <p>Afiyet Olsun!</p>
+</header>
+
+<!-- Yemekler -->
+<div class="section-title">YEMEKLER</div>
+<div class="container">
+  <div class="menu-header">🍽 Yemekleri Göster</div>
+  <div class="menu-items">
+
+    <div class="sub-header red">🍳 Kahvaltılıklar</div>
+    <div class="menu-items">
+      <div class="menu-item">Menemen</div>
+      <div class="menu-item">Sucuklu Yumurta</div>
+      <div class="menu-item">Omlet</div>
+      <div class="menu-item">Kıymalı Yumurta</div>
+      <div class="menu-item">Kavurmalı Yumurta</div>
+      <div class="menu-item">Sahanda Yumurta</div>
+      <div class="menu-item">Kahvaltı Tabağı</div>
+    </div>
+
+    <div class="sub-header red">🥞 Krepler</div>
+    <div class="menu-items">
+      <div class="menu-item">Krep (Sade)</div>
+      <div class="menu-item">Krep (Kaşarlı)</div>
+      <div class="menu-item">Krep (Sucuklu)</div>
+      <div class="menu-item">Krep (Karışık)</div>
+    </div>
+
+    <div class="sub-header red">🫓 Gözlemeler</div>
+    <div class="menu-items">
+      <div class="menu-item">Kaşarlı Gözleme</div>
+      <div class="menu-item">Sucuklu Gözleme</div>
+      <div class="menu-item">Karışık Gözleme</div>
+      <div class="menu-item">Sade Gözleme</div>
+      <div class="menu-item">Peynirli Gözleme</div>
+    </div>
+
+    <div class="sub-header red">🥪 Tostlar</div>
+    <div class="menu-items">
+      <div class="menu-item">Kaşarlı Tost</div>
+      <div class="menu-item">Sucuklu Tost</div>
+      <div class="menu-item">Karışık Tost</div>
+      <div class="menu-item">Special Tost</div>
+    </div>
+
+    <div class="sub-header red">🍝 Ana Yemekler</div>
+    <div class="menu-items">
+      <div class="menu-item">Makarna</div>
+      <div class="menu-item">Mantı</div>
+      <div class="menu-item">Porsiyon Köfte</div>
+      <div class="menu-item">Köfte Ekmek</div>
+    </div>
+
+    <div class="sub-header red">🥪 Sandviçler</div>
+    <div class="menu-items">
+      <div class="menu-item">Patso</div>
+      <div class="menu-item">Kumru</div>
+    </div>
+
+    <div class="sub-header red">🍟 Yan Ürünler</div>
+    <div class="menu-items">
+      <div class="menu-item">Porsiyon Patates</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- İçecekler -->
+<div class="section-title">İÇECEKLER</div>
+<div class="container">
+  <div class="menu-header">🥤 İçecekleri Göster</div>
+  <div class="menu-items">
+
+    <div class="sub-header red">☕ Sıcak İçecekler</div>
+    <div class="menu-items">
+      <div class="sub-header red">🍵 Çay Çeşitleri</div>
+      <div class="menu-items">
+        <div class="menu-item">Çay</div>
+        <div class="menu-item">Meyveli Çay</div>
+        <div class="menu-item">Ada Çayı</div>
+      </div>
+
+      <div class="sub-header red">☕ Kahveler</div>
+      <div class="menu-items">
+        <div class="menu-item">Türk Kahvesi</div>
+        <div class="menu-item">Cappuccino</div>
+        <div class="menu-item">Sütlü Türk Kahvesi</div>
+        <div class="menu-item">Dibek Kahvesi</div>
+        <div class="menu-item">Nescafe</div>
+        <div class="menu-item">Fincan Nescafe</div>
+      </div>
+
+      <div class="sub-header red">🥛 Diğer Sıcak İçecekler</div>
+      <div class="menu-items">
+        <div class="menu-item">Salep</div>
+      </div>
+    </div>
+
+    <div class="sub-header blue">🧊 Soğuk İçecekler</div>
+    <div class="menu-items">
+      <div class="sub-header blue">🥤 Gazlı İçecekler</div>
+      <div class="menu-items">
+        <div class="menu-item">Sade Soda</div>
+        <div class="menu-item">Meyveli Soda</div>
+        <div class="menu-item">Gazoz</div>
+        <div class="menu-item">Şişe Kola</div>
+        <div class="menu-item">Kutu Kola</div>
+        <div class="menu-item">Fanta</div>
+        <div class="menu-item">Lipton Ice Tea</div>
+      </div>
+
+      <div class="sub-header blue">🍹 Meyve & Limonata</div>
+      <div class="menu-items">
+        <div class="menu-item">Meyve Suyu</div>
+        <div class="menu-item">Limonata</div>
+      </div>
+
+      <div class="sub-header blue">💧 Diğer Soğuk İçecekler</div>
+      <div class="menu-items">
+        <div class="menu-item">Enerji İçeceği</div>
+        <div class="menu-item">Su</div>
+        <div class="menu-item">Ayran</div>
+        <div class="menu-item">Çorçil</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>© Bi'Mola çay ve tost evi menü hakları Enes ve Arda kişilerine aittir :)
+</footer>
+
+<script>
+// Ana kategori aç/kapa
+document.querySelectorAll('.menu-header').forEach(header=>{
+  header.addEventListener('click', function(){
+    const menu = header.nextElementSibling;
+    if(!menu) return;
+    menu.style.display = (menu.style.display==='block') ? 'none' : 'block';
+  });
+});
+
+// Alt kategori aç/kapa (aynı seviyedeki diğer alt menüler kapanır)
+document.querySelectorAll('.sub-header').forEach(header=>{
+  header.addEventListener('click', function(){
+    const menu = header.nextElementSibling;
+    if(!menu) return;
+    const parent = header.parentElement;
+    parent.querySelectorAll(':scope > .menu-items').forEach(m=>{
+      if(m!==menu) m.style.display='none';
+    });
+    menu.style.display = (menu.style.display==='block') ? 'none' : 'block';
+  });
+});
+</script>
+
+</body>
+</html>
